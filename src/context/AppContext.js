@@ -2,11 +2,11 @@ import React, { createContext, useState } from 'react';
 
 export const AppContext = createContext();
 
-const AppContextProvider = ({ children }) => {
+export const AppProvider = ({ children }) => {
   const [availableModels, setAvailableModels] = useState([
-    { name: 'A200', available: true, bookings: [] },
-    { name: 'C200', available: true, bookings: [] },
-    { name: 'C200d', available: true, bookings: [] },
+    { name: 'A200', available: true },
+    { name: 'C200', available: true },
+    { name: 'C200d', available: true },
   ]);
 
   return (
@@ -15,5 +15,3 @@ const AppContextProvider = ({ children }) => {
     </AppContext.Provider>
   );
 };
-
-export default AppContextProvider;

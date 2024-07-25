@@ -4,7 +4,7 @@ import './ScheduleTestDrive.css';
 
 const ScheduleTestDrive = () => {
   return (
-    <div className="container">
+    <div>
       <TestDriveScheduler />
     </div>
   );

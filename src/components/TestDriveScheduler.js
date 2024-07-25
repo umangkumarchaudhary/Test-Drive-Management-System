@@ -4,7 +4,7 @@ import TimePicker from './TimePicker';
 import CarModelSelector from './CarModelSelector';
 import CarAvailability from './CarAvailability';
 import { AppContext } from '../context/AppContext';
-import './TestDriveScheduler.css';
+import './TestDriveScheduler.css'
 
 const TestDriveScheduler = () => {
   const { availableModels, setAvailableModels } = useContext(AppContext);
